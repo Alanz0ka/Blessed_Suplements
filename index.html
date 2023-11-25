@@ -1,95 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blessed Suplements</title>
-
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-        crossorigin="anonymous"></script>
-    <link href="style.css" rel="stylesheet">
+    <title>Login</title>
+    <link rel="stylesheet" href="pages/login/login.css">
 </head>
-
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img id="imgCabecalho" src="img/logoBlessed.png"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Promoção</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Kits
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Hipertrofia</a></li>
-                            <li><a class="dropdown-item" href="#">Emagrecimento</a></li>
-                           
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                 
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
-<div class="Banner">
+    <div class="container">
+        <form onsubmit="validateForm(); return false;">
+            <h1 class="texto">Bem-vindo</h1>
+            <p class="texto">A Blessed Suplements</p>
+            <img src="../svg\moca-flutuando.svg"/>
+            <h3 class="texto">Faça login para entrar</h3>
+            <input id="username" type="text" name="email" placeholder="Seu e-mail.."/>
+            <input id="password" type="password" name="senha" placeholder="Sua senha..."/>
+            <input type="submit" name="acao" value="enviar" onclick="validateForm()"/>
 
-</div>
-<h2 id="tit_prod">PRODUTOS</h2>
-<div class="Homeprod">
-    <div class="card" style="width: 18rem;">
-        <img src="./img/maxTitanium/creatina.jpeg" class="card-img-top" alt="creatina maxTitanium 150g">
-        <div class="card-body">
-          <h5 class="card-title">Creatina maxTitanium 150g</h5>
-          <p class="card-text">A creatina, auxilia no ganho de força e resistência.</p>
-          <a href="#" class="btn btn-primary">R$ 169,90</a>
-        </div>
-      </div>
-
-    <div class="card" style="width: 18rem;">
-    <img src="./img/maxTitanium/hipercalorico.jpeg" class="card-img-top" alt="hipercalorico maxTitanium 17500 1,4kg">
-    <div class="card-body">
-        <h5 class="card-title">hipercalorico maxTitanium 17500 1,4kg</h5>
-        <p class="card-text">O hipercalorico, é um suplemento alimentar, que auxilia no ganho de peso.</p>
-        <a href="#" class="btn btn-primary">R$ 84,99</a>
+        </form>
     </div>
-      </div>
-
-    <div class="card" style="width: 18rem;">
-    <img src="./img/maxTitanium/whey_protein.jpeg" class="card-img-top" alt="Whey protein maxTitanium Whey Pro 1kg">
-    <div class="card-body">
-        <h5 class="card-title">Whey protein maxTitanium Whey Pro 1kg</h5>
-        <p class="card-text">O whey protein, é um suplemento alimentar que auxilia na hipertrofia, fazendo assim, o usuário ter um resultado melhor no seu corpo.</p>
-        <a href="#" class="btn btn-primary">R$ 89,99</a>
-    </div>
-    </div>
-</div>
-
+    <script src="pages/login/login.js"></script>
 </body>
-
 </html>
