@@ -19,12 +19,7 @@ password.addEventListener('blur',()=>{
 });
 
 function validateForm() {
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
 
-    if (username === 'blessed@blessed.com' && password === 'abencoados') {
-      window.location.href = '../../pages/home/home.html';
-    } else {
-      alert('Nome de usuário ou senha inválidos. Tente novamente.');
-    }
-  }
+  window.location.href = '../../pages/home/home.html';
+    
+}
